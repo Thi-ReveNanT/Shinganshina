@@ -1,0 +1,2 @@
+# Shinganshina
+Tatakae
