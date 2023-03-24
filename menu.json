@@ -1,0 +1,172 @@
+{"menu":[
+{
+    "id":1,
+    "nombre": "hamburguesa",
+     "precio": "150$",
+     "imagen": "hamburguesa.jpg"
+ },
+ {
+    "id":2,
+    "nombre": "tacos",
+     "precio": "100$",
+     "imagen": "taco.jpg"
+ },
+ {
+    "id":3,
+    "nombre": "sincronizada",
+     "precio": "150$",
+     "imagen": "sincro.jpg"
+ },
+ {
+    "id":4,
+    "nombre": "papa asada",
+     "precio": "60$",
+     "imagen": "papa.jpg"
+ },
+ {
+    "id":5,
+    "nombre": "hot dog",
+     "precio": "60$",
+     "imagen": "hotdog.jpg"
+ },
+ {
+    "id":6,
+    "nombre": "nachos",
+    "precio": "50$",
+     "imagen": "nachos.jpg"
+ },
+ {
+    "id":7,
+    "nombre": "quesadillas",
+     "precio": "90$",
+     "imagen": "patel.jpg"
+ },
+ {
+    "id":8,
+    "nombre": "tostadas",
+     "precio": "80$",
+     "imagen": "pay.jpg"
+ },
+ {
+    "id":9,
+    "nombre": "spaguetti con albondigas",
+     "precio": "80$",
+     "imagen": "malteada.jpg"
+ },
+ {
+    "id":10,
+    "nombre": "milanesa de pollo",
+     "precio": "80$",
+     "imagen": "fresas.jpg"
+ }
+]
+}
+{"complementos":[
+{
+     "id":1,
+     "tocino, queso, cebolla, lechuga"
+},
+{
+      "id":2,
+     "cilantro, cebolla, lechuga"
+},
+{
+      "id":3,
+     "cilantro, cebolla, lechuga"
+},
+{
+      "id":4,
+     "carne, queso"
+},
+{
+      "id":5,
+     "tomate, cebolla, pico de gallo, queso"
+},
+{
+      "id":6,
+     "tomate, cebolla, carne"
+},
+{
+      "id":7,
+     "cebolla, carne, queso amarillo"
+},
+{
+      "id":8,
+     "cilantro, cebolla, tomate, queso derretido"
+},
+{
+      "id":9,
+     "queso, tortillas"
+},
+{
+      "id":10,
+     "lechuga, frijoles, papas fritas, tomate"
+}
+]
+}
+{"postres":[
+{
+     "id":11,
+     "nombre":"pastel de chocolate",
+     "precio":"60",
+     "imagen":"imagen.jpg"
+},  
+{
+     "id":12,
+     "nombre":"pay de limon",
+     "precio":"60",
+     "imagen":"imagen.jpg"
+},
+{
+     "id":13,
+     "nombre":"fresas con crema",
+     "precio":"60",
+     "imagen":"imagen.jpg"
+},
+{
+     "id":14,
+     "nombre":"malteada de fresa",
+     "precio":"60",
+     "imagen":"imagen.jpg"
+},                
+{
+     "id":15,
+     "nombre":"cono de helado",
+     "precio":"60",
+     "imagen":"imagen.jpg"
+} 
+]
+}
+{"bebidas":[
+{
+     "id":16,
+     "nombre":"coca cola",
+     "precio":"20",
+     "imagen":"imagen.jpg"
+},  
+{
+     "id":17,
+     "nombre":"licuado de platano",
+     "precio":"20",
+     "imagen":"imagen.jpg"
+},
+{
+     "id":18,
+     "nombre":"refresco de sabor",
+     "precio":"20",
+     "imagen":"imagen.jpg"
+},
+{
+     "id":19,
+     "nombre":"agua de limon",
+     "precio":"20",
+     "imagen":"imagen.jpg"
+},                
+{
+     "id":20,
+     "nombre":"agua de jamaica",
+     "precio":"20",
+     "imagen":"imagen.jpg"
+}
+]
+}
