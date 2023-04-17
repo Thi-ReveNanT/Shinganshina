@@ -12,7 +12,7 @@
 <title>FISICA</title>
 </head>
 <body>
-    <nav class="navbar navbar-light" style="background-color:aqua">
+    <nav class="navbar navbar-light" style="background-color:purple">
     </nav>
     <div class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Calculadora de Fisica 1</h1>
@@ -45,7 +45,6 @@
         <br>
         <input type="button" value="Calcular"
         onclick="Calcular()">    
-
         </form>
         <p>Velocidad: <span id="velocidad"></span></p>
         <p>Aceleracion: <span id="aceleracion"></span></p>
@@ -54,12 +53,61 @@
     </div>
     <script>
         function Calcular(){
-            const distancia = parseFloat(document.getElementById
+            const distancia=parseFloat(document.getElementById
             ('distancia').value);
-            
-            console.log("la distancia es: " +distancia);
-        document.getElementById('distancia').
-        textContent=velocidad.toFixed(2) + ' ' +distancia;
+            const tiempo=parseFloat(document.getElementById
+            ('tiempo').value);
+            const distanciaUnidad=parseFloat(document.getElementById
+            ('distanciaUnidad').value);
+            const tiempoUnidad=parseFloat(document.getElementById
+            ('tiempoUnidad').value);
+            const velocidadUnidad=parseFloat(document.getElementById
+            ('velocidadUnidad').value);
+            let distanciaSI=0;
+            let tiempoSI=0;
+           if(distanciaUnidad=='metros'){
+            distanciaSI = distancia;
+           }
+           else if (distanciaUnidad === 'metros'){
+            distanciaSI = distancia /3.281;
+           }
+           if(tiempoUnidad === 'segundos'){
+            tiempoSI = tiempo;
+           }
+           else if (tiempoUnidad === 'horas'){
+            tiempoSI = tiempo * 3600;
+           }
+           let velocidad = 0;
+           let aceleracion = 0;
+           let rapidez = 0;
+           if(velocidadUnidad === 'metros_por_segundo'){
+            velocidad = distanciaSI / tiempoSI;
+            rapidez = velocidad;
+            aceleracion =  velocidad / tiempoSI;
+           }
+          else if(velocidadUnidad === 'pies_por_segundo'){
+            velocidad = (distanciaSI * 3.281) / tiempoSI;
+            rapidez = velocidad;
+            aceleracion =  velocidad / tiempoSI;
+          }
+          else if(velocidadUnidad === 'kilometros_por_hora'){
+            velocidad = (distanciaSI / 1000) / (tiempoSI / 3600);
+            rapidez = velocidad;
+            aceleracion =  velocidad / tiempoSI;
+          }
+          else if(velocidadUnidad === 'millas_por_hora'){
+            velocidad = (distanciaSI / 1609) / (tiempoSI / 3600);
+            rapidez = velocidad;
+            aceleracion =  velocidad / tiempoSI;
+          }
+          let resultados = '';
+
+          document.getElementById('velocidad').textContent = velocidad.toFixed(2) + ' ' + velocidadUnidad;
+          document.getElementById('aceleracion').textContent = aceleracion.toFixed(2) + ' ' + velocidadUnidad;
+          document.getElementById('rapidez').textContent = rapidez.toFixed(2) + ' ' + velocidadUnidad;
+
+          document.getElementById('resultado').innerHTML=resultado;
+
         }
     </script>
 </body>
