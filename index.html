@@ -57,12 +57,12 @@
             ('distancia').value);
             const tiempo=parseFloat(document.getElementById
             ('tiempo').value);
-            const distanciaUnidad=parseFloat(document.getElementById
-            ('distanciaUnidad').value);
-            const tiempoUnidad=parseFloat(document.getElementById
-            ('tiempoUnidad').value);
-            const velocidadUnidad=parseFloat(document.getElementById
-            ('velocidadUnidad').value);
+            const distanciaUnidad = document.getElementById
+            ('distanciaUnidad').value;
+            const tiempoUnidad = document.getElementById
+            ('tiempoUnidad').value;
+            const velocidadUnidad = document.getElementById
+            ('velocidadUnidad').value;
             let distanciaSI=0;
             let tiempoSI=0;
            if(distanciaUnidad=='metros'){
@@ -100,7 +100,7 @@
             rapidez = velocidad;
             aceleracion =  velocidad / tiempoSI;
           }
-          let resultados = '';
+          let resultado = '';
 
           document.getElementById('velocidad').textContent = velocidad.toFixed(2) + ' ' + velocidadUnidad;
           document.getElementById('aceleracion').textContent = aceleracion.toFixed(2) + ' ' + velocidadUnidad;
